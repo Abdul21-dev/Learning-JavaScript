@@ -12,3 +12,6 @@ console.log(a--); // 7
 // comparison operators 
 let age = 16;
 console.log(age>16);
+console.log(age<16);
+// non-numbers comparisons
+'*' > '&'
