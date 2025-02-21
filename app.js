@@ -13,5 +13,12 @@ console.log(a--); // 7
 let age = 16;
 console.log(age>16);
 console.log(age<16);
-// non-numbers comparisons
-'*' > '&'
+// if statement
+if(age > 18){
+    console.log("you can vote");
+    console.log("you can drive");
+}
+if(age < 18){
+    console.log("you cannot vote");
+    console.log("you cannot drive");
+}
