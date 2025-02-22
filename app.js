@@ -33,6 +33,9 @@ if(color === "yellow"){
 if(color === "green"){
     console.log("Go, Light color is green");
 }
+else{
+    console.log("Traffic light is not working");
+}
 // Using elseif statement
 let marks = 75;
 if(marks >= 80){
@@ -46,4 +49,17 @@ else if(marks >= 33) {
 }
 else if(marks <= 33) {
     console.log("FAIL");
+}
+// Using nested else if
+let y = 45;
+if(y >= 33){
+    console.log("PASS");
+    if(y >= 80){
+        console.log("A+");
+    }else {
+        console.log("A");
+    }
+}
+else{
+    console.log("Better luck next time");
 }
