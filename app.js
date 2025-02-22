@@ -33,3 +33,17 @@ if(color === "yellow"){
 if(color === "green"){
     console.log("Go, Light color is green");
 }
+// Using elseif statement
+let marks = 75;
+if(marks >= 80){
+    console.log("A+");
+}
+else if(marks >= 60) {
+    console.log("A");
+}
+else if(marks >= 33) {
+    console.log("B");
+}
+else if(marks <= 33) {
+    console.log("FAIL");
+}
