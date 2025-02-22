@@ -22,3 +22,14 @@ if(age < 18){
     console.log("you cannot vote");
     console.log("you cannot drive");
 }
+// Building traffic signals
+let color = "green";
+if(color === "red"){
+    console.log("stop!,Light color is red");
+}
+if(color === "yellow"){
+    console.log("Slow down, Light color is yellow");
+}
+if(color === "green"){
+    console.log("Go, Light color is green");
+}
