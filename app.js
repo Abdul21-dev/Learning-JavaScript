@@ -63,3 +63,12 @@ if(y >= 33){
 else{
     console.log("Better luck next time");
 }
+//Logical opereators
+// ques. write a program to a string starts with "a" and length>3 is a good string and others bad
+let name = "abdul";
+if(name[0] === "a" && name.length >= 3 ){
+    console.log("Good String");
+}
+else{
+    console.log("Bad String");
+}
