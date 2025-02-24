@@ -72,3 +72,10 @@ if(name[0] === "a" && name.length >= 3 ){
 else{
     console.log("Bad String");
 }
+// truthy and falsey 
+
+if(""){
+    console.log("it has truthy value");
+}else{
+    console.log("it has falsy value");
+}
