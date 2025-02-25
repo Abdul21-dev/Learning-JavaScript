@@ -122,6 +122,14 @@ switch(day){
         console.log("Not a Day");
 }
 // Alerts and prompts
-let firstname = prompt("Enter your first name");
-let lastname = prompt("Enter your last name");
-console.log("Welcome", firstname, lastname, "!");
+//let firstname = prompt("Enter your first name");
+//let lastname = prompt("Enter your last name");
+//console.log("Welcome", firstname, lastname, "!");
+// string trim
+//let password = prompt("Enter your password");
+//let newpass = password.trim();
+//console.log(newpass)
+// string case
+let str = "Random string";
+let newstr = str.toUpperCase();
+console.log(newstr);
