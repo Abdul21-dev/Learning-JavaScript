@@ -23,19 +23,19 @@ if(age < 18){
     console.log("you cannot drive");
 }
 // Building traffic signals
-let color = "green";
-if(color === "red"){
-    console.log("stop!,Light color is red");
-}
-if(color === "yellow"){
-    console.log("Slow down, Light color is yellow");
-}
-if(color === "green"){
-    console.log("Go, Light color is green");
-}
-else{
-    console.log("Traffic light is not working");
-}
+//let color = "green";
+//if(color === "red"){
+  //  console.log("stop!,Light color is red");
+//}
+//if(color === "yellow"){
+  //  console.log("Slow down, Light color is yellow");
+//}
+//if(color === "green"){
+//    console.log("Go, Light color is green");
+//}
+//else{
+  //  console.log("Traffic light is not working");
+//}
 // Using elseif statement
 let marks = 75;
 if(marks >= 80){
@@ -78,4 +78,46 @@ if(""){
     console.log("it has truthy value");
 }else{
     console.log("it has falsy value");
+}
+// Switch statement
+let color ="green";
+switch(color){
+    case "red":
+        console.log("stop");
+        break;
+        case "yellow":
+            console.log("slow down");
+            break;
+         case "green":
+            console.log("Go");
+            break;
+           default :
+           console.log("Broken Light");    
+}
+// ques. Print days using switch statement
+let day = 5;
+switch(day){
+    case 1 :
+        console.log("Monday");
+        break;
+        case 2 :
+        console.log("Tuesday");
+        break;
+        case 3 :
+        console.log("Wednesday");
+        break;
+        case 4 :
+        console.log("Thursday");
+        break;
+        case 5 :
+        console.log("Friday");
+        break;
+        case 6 :
+        console.log("Saturday");
+        break;
+        case 7 :
+        console.log("Sunday");
+        break;
+        default :
+        console.log("Not a Day");
 }
