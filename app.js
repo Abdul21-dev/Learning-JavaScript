@@ -133,3 +133,6 @@ switch(day){
 let str = "Random string";
 let newstr = str.toUpperCase();
 console.log(newstr);
+// String methods with arguments
+let z = "ILOVECODING";
+z.indexOf("LOVE");
