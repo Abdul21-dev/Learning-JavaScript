@@ -136,3 +136,7 @@ console.log(newstr);
 // String methods with arguments
 let z = "ILOVECODING";
 z.indexOf("LOVE");
+// method chaining
+let msg1 = "   Hello    ";
+let newmsg = msg1.toUpperCase().trim();
+console.log(newmsg);
