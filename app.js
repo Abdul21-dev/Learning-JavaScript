@@ -141,7 +141,9 @@ let msg1 = "   Hello    ";
 let newmsg = msg1.toUpperCase().trim();
 console.log(newmsg);
 // slice
-let p = "ILOVECODING";
+let p = "Ilovecoding";
 console.log(p.slice(1,5));
 console.log(p.slice(5));
 console.log(p.slice(-6));
+// Replace
+console.log(p.replace("LOVE","DO"));
