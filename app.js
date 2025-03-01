@@ -147,3 +147,5 @@ console.log(p.slice(5));
 console.log(p.slice(-6));
 // Replace
 console.log(p.replace("LOVE","DO"));
+// Array
+let Students = ["Abdul", "Priyanshu", "Veeru", "Dwatant"];
