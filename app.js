@@ -149,3 +149,8 @@ console.log(p.slice(-6));
 console.log(p.replace("LOVE","DO"));
 // Array
 let Students = ["Abdul", "Priyanshu", "Veeru", "Dwatant"];
+let nums = [2, 4, 6, 8]; 
+console.log(nums[2]);
+// mixing Array
+let info = ["Abdul", 25, 6.1];
+console.log(info.length);
