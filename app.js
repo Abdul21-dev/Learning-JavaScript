@@ -154,3 +154,6 @@ console.log(nums[2]);
 // mixing Array
 let info = ["Abdul", 25, 6.1];
 console.log(info.length);
+// Accesing Array 
+console.log(info[0][0]);
+console.log(info[0].length);
