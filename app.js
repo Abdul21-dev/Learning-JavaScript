@@ -157,3 +157,9 @@ console.log(info.length);
 // Accesing Array 
 console.log(info[0][0]);
 console.log(info[0].length);
+// Array methods
+let cars = ["Audi", "BMW", "XUV"];
+//console.log(cars.push("Toyota"));
+//console.log(cars.pop());
+console.log(cars.unshift("Toyota"));
+console.log(cars.shift("Toyota"));
