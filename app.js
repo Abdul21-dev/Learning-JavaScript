@@ -163,3 +163,8 @@ let cars = ["Audi", "BMW", "XUV"];
 //console.log(cars.pop());
 console.log(cars.unshift("Toyota"));
 console.log(cars.shift("Toyota"));
+// concatination and reverse
+let primary = ["red", "yellow", "blue"];
+let secondary = ["orange", "green", "violet"];
+console.log(primary.concat(secondary));
+console.log(primary.reverse());
