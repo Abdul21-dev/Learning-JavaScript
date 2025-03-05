@@ -168,3 +168,9 @@ let primary = ["red", "yellow", "blue"];
 let secondary = ["orange", "green", "violet"];
 console.log(primary.concat(secondary));
 console.log(primary.reverse());
+// slice in array
+let colors = ["red", "yellow", "blue", "orange", "green"];
+console.log(colors.slice(3));
+console.log(colors.slice(2,4));
+console.log(colors.slice(-2));
+
