@@ -169,8 +169,15 @@ let secondary = ["orange", "green", "violet"];
 console.log(primary.concat(secondary));
 console.log(primary.reverse());
 // slice in array
+// let colors = ["red", "yellow", "blue", "orange", "green"];
+// console.log(colors.slice(3));
+// console.log(colors.slice(2,4));
+// console.log(colors.slice(-2));
+// splice in array
 let colors = ["red", "yellow", "blue", "orange", "green"];
-console.log(colors.slice(3));
-console.log(colors.slice(2,4));
-console.log(colors.slice(-2));
-
+console.log(colors.splice(1,1));
+console.log(colors.splice(1,0, "indigo"));
+console.log(colors.splice(1,0, "purple"));
+// Array sorting
+let alpha = ["d", "a", "c", "e"];
+console.log(alpha.sort());
