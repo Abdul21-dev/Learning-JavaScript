@@ -181,3 +181,11 @@ console.log(colors.splice(1,0, "purple"));
 // Array sorting
 let alpha = ["d", "a", "c", "e"];
 console.log(alpha.sort());
+// Nested Arrays
+let ar = [[2,4], [3,6], [4,8]];
+// creating a nested array to show the following tic tac toe state written in copy
+let game = [["X", null, "O"], [null, "X", null] ,["O", null, "X"]];
+console.log(game);
+// making a change to this array as written in copy
+//console.log(game[0].slice(1,1, "O")); => This is not working . but why??
+game[0][1] = "O";
