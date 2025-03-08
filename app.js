@@ -189,3 +189,37 @@ console.log(game);
 // making a change to this array as written in copy
 //console.log(game[0].slice(1,1, "O")); => This is not working . but why??
 game[0][1] = "O";
+// LOOPS
+for(let i=1; i<=5; i++){
+    console.log(i);
+}
+console.log("Odd numbers");
+// Printing all odd numbers till 15
+for(let i=1; i<=15; i= i+2){
+    console.log(i);
+}
+console.log("even numbers");
+// Printing all even numbers till 10
+for(let i=2; i<=10; i= i+2){
+    console.log(i);
+}
+console.log("printing table of 5");
+// printing table of 5
+for(i=5; i<=50; i=i+5){
+    console.log(i);
+}
+// printing table of any number
+//let n = prompt("Enter your number");
+  //  n = parseInt(n);
+   // console.log("printing table of", n);
+    //for(i=n; i<=n*10; i=i+n){
+      //  console.log(i);
+    //}
+    
+    // Nested loops
+    for(let i=1; i<=3; i++){
+        console.log("outer loop number:", i);
+        for(let j=1; j<=3; j++){
+            console.log(j);
+        }
+    }
