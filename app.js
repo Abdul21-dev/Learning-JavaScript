@@ -223,3 +223,21 @@ for(i=5; i<=50; i=i+5){
             console.log(j);
         }
     }
+    // While loops
+    console.log("printing through while loop");
+   let t = 1;
+    while(t<=5){
+        console.log(t);
+        t++;
+    }
+    // movie guessing game
+    let favMovie = "Avatar";
+    let guess = prompt("Guess the favourite movie");
+    while((guess != favMovie)&&(guess != "quit")){
+        guess = prompt("Wrong! Please Try again");
+    }
+    if(guess == favMovie){
+        console.log("congrats! you are correct");
+    }else{
+        console.log("You quit. Thanks for participating");
+    }
