@@ -231,13 +231,78 @@ for(i=5; i<=50; i=i+5){
         t++;
     }
     // movie guessing game
-    let favMovie = "Avatar";
-    let guess = prompt("Guess the favourite movie");
-    while((guess != favMovie)&&(guess != "quit")){
-        guess = prompt("Wrong! Please Try again");
+   // let favMovie = "Avatar";
+    //let guess = prompt("Guess the favourite movie");
+    // while((guess != favMovie)&&(guess != "quit")){
+       // guess = prompt("Wrong! Please Try again");
+    // }
+    // if(guess == favMovie){
+      //  console.log("congrats! you are correct");
+    // }else{
+       // console.log("You quit. Thanks for participating");
+   // }
+    // using break key word
+    let o = 1;
+    while(o<=5){
+        if(o == 3){
+            break;
+        }
+        console.log(o);
+        o++;
     }
-    if(guess == favMovie){
-        console.log("congrats! you are correct");
-    }else{
-        console.log("You quit. Thanks for participating");
+    // Loops with Array
+    console.log("Loops with array");
+    let fruits = ["mango", "apple", "banana", "litchi", "orange"];
+    for(let i=0; i<fruits.length; i++){
+        console.log(`${i+1} ${fruits[i]}`);
     }
+    console.log("printing the same thing backwards");
+    for(let i=fruits.length-1; i>=0; i--){
+        console.log(`${i+1} ${fruits[i]}`);
+    }
+    // Nested array with nested loops
+    console.log("Nested array with nested loops");
+    let heroes=[["ironman", "spiderman", "thor"], ["superman", "wonder women", "flash"]];
+       for(let i=0; i<heroes.length; i++){
+        console.log(`${i+1} ${heroes[i]}`);
+        for(let j=0; j<heroes[i].length; j++){
+            console.log(`j=${j+1} ${heroes[i][j]}`);
+        }
+            }
+            // question on Nested array with nested loops
+            // print student name with marks
+            let students = [["Abdul",99], ["Veeru",33], ["Yash",76]];
+            for(let i=0; i<students.length; i++){
+                console.log("info of student", i+1);
+                for(let j=0; j<students[i].length; j++){
+                    console.log(j+1, students[i][j]);
+                }
+            }
+            // Creating a small to-do app
+            let todo =[];
+            let req = prompt("please enter your request.");
+
+            while(true){
+                if(req == "quit"){
+                    console.log("You quitted");
+                    break;
+                }
+            if(req == "list"){
+                console.log("-----------");
+                for(let i=0; i<todo.length; i++){
+                    console.log(i, todo[i]);
+                }
+                console.log("-----------");
+            }else if(req == "add"){
+                let task = prompt("please add your task");
+                todo.push(task);
+                console.log("task added");
+            }else if(req == "delete"){
+                let idx = prompt("Enter the index you want to delete");
+                todo.splice(idx, 1);
+                console.log("task deleted");
+            }else{
+                console.log("please add a valid request");
+            }
+            req = prompt("please enter your request.");
+         }
