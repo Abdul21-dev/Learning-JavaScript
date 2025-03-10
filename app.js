@@ -279,30 +279,56 @@ for(i=5; i<=50; i=i+5){
                 }
             }
             // Creating a small to-do app
-            let todo =[];
-            let req = prompt("please enter your request.");
+            // let todo =[];
+            // let req = prompt("please enter your request.");
 
-            while(true){
-                if(req == "quit"){
-                    console.log("You quitted");
-                    break;
-                }
-            if(req == "list"){
-                console.log("-----------");
-                for(let i=0; i<todo.length; i++){
-                    console.log(i, todo[i]);
-                }
-                console.log("-----------");
-            }else if(req == "add"){
-                let task = prompt("please add your task");
-                todo.push(task);
-                console.log("task added");
-            }else if(req == "delete"){
-                let idx = prompt("Enter the index you want to delete");
-                todo.splice(idx, 1);
-                console.log("task deleted");
-            }else{
-                console.log("please add a valid request");
-            }
-            req = prompt("please enter your request.");
-         }
+            // while(true){
+              //  if(req == "quit"){
+             //       console.log("You quitted");
+               //     break;
+               // }
+            // if(req == "list"){
+               // console.log("-----------");
+                // for(let i=0; i<todo.length; i++){
+                   // console.log(i, todo[i]);
+                // }
+                // console.log("-----------");
+            // }else if(req == "add"){
+               // let task = prompt("please add your task");
+                // todo.push(task);
+                // console.log("task added");
+            // }else if(req == "delete"){
+               // let idx = prompt("Enter the index you want to delete");
+                // todo.splice(idx, 1);
+                // console.log("task deleted");
+            // }else{
+              //  console.log("please add a valid request");
+            // }
+            // req = prompt("please enter your request.");
+         // }
+        // Object literals
+          const client = {
+                name: "Abdul",
+                age: 20,
+                marks: 92,
+                city: "Allahabad"
+          };
+          const items = {
+            price: 100,
+            discount: 50,
+            color: ["red", "pink"]
+          };
+          console.log(client, items);
+          // creating an object literal for the properties of twitter post
+          const post ={
+            username: "Abdul",
+            content: "India won champions trophy",
+            likes: 183,
+            reposts: 82,
+            tags: ["@viratkohli", "@Ro45"]
+          };
+          console.log(post);
+          // getting values in object literals
+          console.log(post.likes);
+          console.log(post["content"]);
+          console.log(post.tags[0]);
