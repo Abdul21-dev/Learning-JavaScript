@@ -307,18 +307,18 @@ for(i=5; i<=50; i=i+5){
             // req = prompt("please enter your request.");
          // }
         // Object literals
-          const client = {
-                name: "Abdul",
-                age: 20,
-                marks: 92,
-                city: "Allahabad"
-          };
+    //     const client = {
+    //         name: "Abdul",
+    //         age: 20,
+    //         marks: 92,
+    //         city: "Allahabad"
+    //   };
           const items = {
             price: 100,
             discount: 50,
             color: ["red", "pink"]
           };
-          console.log(client, items);
+          //console.log(client, items);
           // creating an object literal for the properties of twitter post
           const post ={
             username: "Abdul",
@@ -332,3 +332,47 @@ for(i=5; i<=50; i=i+5){
           console.log(post.likes);
           console.log(post["content"]);
           console.log(post.tags[0]);
+          // adding/updating value
+          const client = {
+            name: "Abdul",
+            age: 20,
+            marks: 92,
+            city: "Allahabad"
+      };
+      client.city = "Mumbai";
+      client.gender = "Male";
+      client.marks = 95;
+      console.log(client);
+      // object of objects
+    //   const classinfo = {
+    //    Abdul: {
+    //     grade: "O",
+    //     city: "Allahabad"
+    //    },
+    //    Veeru: {
+    //     grade:"A+",
+    //     city:"Kanpur"
+    //    },
+    //    Yash: {
+    //     grade:"A++",
+    //     city:"Lakimpur"
+    //    }
+    //   };
+    //   classinfo.Veeru.city = "Bangra";
+    //   console.log(classinfo);
+      // Array of objects
+      const classinfo = [
+        {name: "Abdul",
+            grade: "O",
+            city: "Allahabad"
+           },
+           { name: "Veeru",
+            grade:"A+",
+            city:"Kanpur"
+           },
+           { name: "Yash",
+            grade:"A++",
+            city:"Lakimpur"
+           }
+      ];
+      console.log(classinfo);
