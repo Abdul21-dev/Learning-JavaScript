@@ -376,3 +376,24 @@ for(i=5; i<=50; i=i+5){
            }
       ];
       console.log(classinfo);
+      //printing random integers using maths
+      let ra = Math.floor(Math.random()*10) + 1;
+      console.log(ra);
+      // Guessing game
+      const max = prompt("enter the max number");
+      const random = Math.floor(Math.random() * max) + 1;
+      let guess = prompt("Guess the number");
+      while(true){
+        if(guess == "quit"){
+            console.log("user quitted!!");
+            break;
+        }
+        if(guess == random){
+            console.log("Congrats! you are right, the random number is", random);
+            break;
+        }else if(guess < random){
+            guess = prompt("Your number is too small, please try again");
+        }else{
+            guess = prompt("Your number is too big, please try again");
+        }
+      };
