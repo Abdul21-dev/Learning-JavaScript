@@ -380,20 +380,48 @@ for(i=5; i<=50; i=i+5){
       let ra = Math.floor(Math.random()*10) + 1;
       console.log(ra);
       // Guessing game
-      const max = prompt("enter the max number");
-      const random = Math.floor(Math.random() * max) + 1;
-      let guess = prompt("Guess the number");
-      while(true){
-        if(guess == "quit"){
-            console.log("user quitted!!");
-            break;
+    //   const max = prompt("enter the max number");
+    //   const random = Math.floor(Math.random() * max) + 1;
+    //   let guess = prompt("Guess the number");
+    //   while(true){
+    //     if(guess == "quit"){
+    //         console.log("user quitted!!");
+    //         break;
+    //     }
+    //     if(guess == random){
+    //         console.log("Congrats! you are right, the random number is", random);
+    //         break;
+    //     }else if(guess < random){
+    //         guess = prompt("Your number is too small, please try again");
+    //     }else{
+    //         guess = prompt("Your number is too big, please try again");
+    //     }
+     // };
+       // Functions in js
+       function hello(){
+               console.log("hello!");  
+       }
+       hello();
+       // write a function to roll a dice to bring the outcome from 1 to 6
+          function rollDice(){
+            let rand = Math.floor(Math.random() * 6) + 1;
+            console.log(rand);
+          }
+          rollDice();
+        // Function with Arguments
+        function printInfo(name, age){
+            console.log(`${name}'s age is ${age}.`);
         }
-        if(guess == random){
-            console.log("Congrats! you are right, the random number is", random);
-            break;
-        }else if(guess < random){
-            guess = prompt("Your number is too small, please try again");
-        }else{
-            guess = prompt("Your number is too big, please try again");
+        printInfo("Abdul", 20);
+        // write a Function to print average of 3 numbers
+        function average(a, b, c){
+            console.log("Average is", (a+b+c)/3);
         }
-      };
+        average(3, 4, 6);
+        // write a function to print the multiplication table of a number
+        function printtable(n){
+            for(let i=0; i<= n*10; i=i+n){
+            console.log(i);
+            }
+        }
+        printtable(18);
