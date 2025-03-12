@@ -425,3 +425,32 @@ for(i=5; i<=50; i=i+5){
             }
         }
         printtable(18);
+   // Using Return in functions
+   function sum(a, b){
+          sum = a + b;
+          return sum;
+   }
+   s = sum(3, 5);
+   console.log(s);
+   // create a function that returns the sum of numbers from 1 to n
+    function getSum(n){
+        let sum = 0;
+        for(let i=0; i<= n; i++){
+            sum += i;
+        }
+        return sum;
+    }
+    let g = getSum(101);
+    console.log(g);
+    // create a function that return the concatenation of all the strings in an aaray
+    let st = ["hi", " my", " name", " is", " Abdul", "Rahman"];
+    function concat(str){
+        let result= "" ;
+        for(let i=0; i<str.length; i++){
+            result += str[i];
+        }
+
+        return result;
+    }
+    let u = concat(st);
+    console.log(u);
