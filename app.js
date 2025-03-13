@@ -454,3 +454,28 @@ for(i=5; i<=50; i=i+5){
     }
     let u = concat(st);
     console.log(u);
+    // learning scopes in JS
+    function outerFunc(){
+
+        let x = 5;       
+        function innerFunc(){
+            console.log(x);
+        }
+        innerFunc();
+    }
+    outerFunc();
+    // function expression
+    const sm = function(a, b){
+        return a+b;
+    }
+    console.log(sm(2,6));
+    // Higher order functions
+    function multipleGreet(func, count){
+        for(let i=1; i<= count; i++){
+            func();
+        }
+    }
+    let greet = function(){
+        console.log("hello");
+    }
+    multipleGreet(greet, 10);
