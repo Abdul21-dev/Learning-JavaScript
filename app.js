@@ -523,3 +523,23 @@ for(i=5; i<=50; i=i+5){
                 return a/b;
             },
         }
+        // Using this keyword
+        const data ={
+            name: "Abdul",
+            age: 20,
+            eng: 93,
+            math: 97,
+            phy: 95,
+            getAvg(){
+                let avg = (this.eng + this.math + this.phy) /3;
+                console.log(`${this.name} got an average marks of ${avg}`);
+            }
+        }
+        console.log(data.getAvg());
+        // try and catch statement
+        let l = "YES";
+        try{
+            console.log(l);
+        }catch{
+            console.log("Variable not defined");
+        }
