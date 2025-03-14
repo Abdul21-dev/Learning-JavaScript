@@ -479,3 +479,47 @@ for(i=5; i<=50; i=i+5){
         console.log("hello");
     }
     multipleGreet(greet, 10);
+    // Higher order functions return a function
+    function oddEvenFactory(request){
+        if(request == "odd"){
+            odd = function(n){
+                console.log(!(n%2 == 0));
+            }
+        }else if(request == "even"){
+            even = function(n){
+                console.log(n%2 == 0);
+            }
+        }else{
+                console.log("wrong request");
+            }
+        }
+        // Methods
+        // const calculator ={
+        //     add: function(a, b){
+        //         return a+b;
+        //     },
+        //     sub: function(a, b){
+        //         return a-b;
+        //     },
+        //     mul: function(a, b){
+        //         return a*b;
+        //     },
+        //     div: function(a, b){
+        //         return a/b;
+        //     },
+        // }
+        // calculator shorthand
+        const calculator ={
+            add(a, b){
+                return a+b;
+            },
+            sub(a, b){
+                return a-b;
+            },
+            mul(a, b){
+                return a*b;
+            },
+            div(a, b){
+                return a/b;
+            },
+        }
