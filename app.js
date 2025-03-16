@@ -543,3 +543,67 @@ for(i=5; i<=50; i=i+5){
         }catch{
             console.log("Variable not defined");
         }
+        // Arrow function
+        const summ = (a,  b) => {
+            console.log(a+b);
+        };
+        console.log(summ(2, 8));
+
+        const cube = (n) => {
+            return n*n*n;
+        };
+        console.log(cube(3));
+        // implicit return
+        const mul = (a, b) => (
+            a*b
+        );
+        console.log(mul(9, 5));
+        // Set timeout function
+        console.log("Hi there!")
+        setTimeout( () =>{
+            console.log("Apna College");
+        }, 5000);
+        console.log("Welcome to");
+        // set interval
+    //   let id =  setInterval( () =>{
+    //         console.log("Apna College");
+    //     }, 2000);
+    //     console.log(id);
+    // this with arrow function
+    const stu ={
+        name: "abdul",
+        marks: 95,
+        prop: this, // global scope
+        getName: function(){
+            console.log(this); // calling object ka this hai, get/name ko student object call kar raha to uska scope use hoga
+            return this.name;
+        },
+        getMarks: ()=> {
+            console.log(this); // calling object ka this hai, get marks ko student object call kar raha aur uska parent global scope hai to wahi use hoga
+            return this.name;
+        },
+        getInfo1: function(){
+            setTimeout( ()=>{
+                console.log(this); // iss this ko call lagayi function() ne jiska parent student hai to uska hi scope use hoga
+            }, 2000);
+        },
+        getInfo2: function(){
+            setTimeout( function(){
+                console.log(this); // isko call settimeout laga raha jiska scope global scope hai to wahi use hoga
+            }, 2000);
+        }
+    };
+    // Write an arrow funstion to print the square of a number "n"
+    let square = (n) =>{
+        return n*n;
+    };
+    console.log(square(6));
+    // write a function that prints "Hello world!" 5 times at an interval of 2s each
+    let id1 = 
+    setInterval(()=>{
+        console.log("Hello world");
+    }, 2000);
+    console.log(id1);
+    setTimeout(()=>{
+        clearInterval(id1);
+    }, 10000);
