@@ -630,3 +630,15 @@ for(i=5; i<=50; i=i+5){
 array.forEach((student) =>{
         console.log(student.name);
 });
+// mapping array
+let numbers = [1, 2, 3, 4, 5, 6];
+let double = numbers.map((el)=>{
+    return el*2;
+});
+console.log(double);
+// filter
+//let numbers = [1, 2, 3, 4, 5, 6];
+let ans = numbers.filter((el)=>{
+    return el%2 == 0; // even->true, odd -> false
+});
+console.log(ans);
