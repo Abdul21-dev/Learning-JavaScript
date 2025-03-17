@@ -599,11 +599,34 @@ for(i=5; i<=50; i=i+5){
     };
     console.log(square(6));
     // write a function that prints "Hello world!" 5 times at an interval of 2s each
-    let id1 = 
-    setInterval(()=>{
-        console.log("Hello world");
-    }, 2000);
-    console.log(id1);
-    setTimeout(()=>{
-        clearInterval(id1);
-    }, 10000);
+    // let id1 = 
+    // setInterval(()=>{
+    //     console.log("Hello world");
+    // }, 2000);
+    // console.log(id1);
+    // setTimeout(()=>{
+    //     clearInterval(id1);
+    // }, 10000);
+    // Array methods
+    // forEach method
+    let arr = [1, 2, 3, 4, 5];
+    let print = function(el){
+        console.log(el);
+    }
+    arr.forEach(print);
+
+    let array = [{
+        name: "Abdul",
+        marks: 93
+    },
+{
+    name: "Yash",
+    marks: 88
+},
+{
+    name: "Veeru",
+    marks: 91
+}]
+array.forEach((student) =>{
+        console.log(student.name);
+});
