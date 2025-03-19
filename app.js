@@ -559,11 +559,7 @@ for(i=5; i<=50; i=i+5){
         );
         console.log(mul(9, 5));
         // Set timeout function
-        console.log("Hi there!")
-        setTimeout( () =>{
-            console.log("Apna College");
-        }, 5000);
-        console.log("Welcome to");
+        //
         // set interval
     //   let id =  setInterval( () =>{
     //         console.log("Apna College");
@@ -642,3 +638,74 @@ let ans = numbers.filter((el)=>{
     return el%2 == 0; // even->true, odd -> false
 });
 console.log(ans);
+// Every
+let m = numbers.every((el)=>(el%2==0));
+// Some
+let n = numbers.some((el)=>(el%2 == 0));
+// Reduce function
+let finalValue = numbers.reduce((res,el)=>{
+    return res+el;
+});
+console.log(finalValue);
+// finding maximum in an array using reduce
+let nimbu = [2, 3, 4, 5, 3, 4, 7, 8, 1, 2];
+// let result = nimbu.reduce((max, el)=>{
+//     if(max<el){
+//         return el;
+//     }else{
+//         return max;
+//     }
+// });
+// console.log(result);
+// finding maximum in an array using reduce
+let result = nimbu.reduce((min, el)=>{
+    if(min>el){
+        return el;
+    }else{
+        return min;
+    }
+});
+console.log(result);
+// Default parameter
+function defaulte(a, b=5){
+    return a+b;
+};
+// spread
+console.log(..."apnacollege");
+// spread with Array literals
+let digit = [1, 2, 3, 4, 5];
+let newdigit = [...digit];
+console.log(newdigit);
+let char = [..."hello"];
+console.log(char);
+let odd =[1,3,5,7];
+let even=[2,4,6,8];
+let combine = [...odd, ...even];
+console.log(combine);
+// spread with object literals
+const dataa = {
+        email: "ironman123@gmail.com",
+        password: "abcd"
+};
+let datacopy = {...dataa, id:123, country: "INDIA"};
+console.log(datacopy);
+// Rest
+function suum(...args){
+    return args.reduce((sum, el)=>(sum + el));
+}
+console.log(suum(1,2,3,4));
+// Destructuring
+let names = ["tony", "steve", "brooks", "peter"];
+let [winner, runnerup, ...others] = names;
+console.log(winner, runnerup);
+// Destructuring objects
+let obj1 = {
+    name:"karan",
+    age:15,
+    class:9,
+    subject:["hindi", "english", "maths", "science", "sst"],
+    username:"karan@123",
+    password:"abcde"
+};
+let {username: user1, password: secret, city: place="mumbai"} = obj1;
+console.log(user1, secret, place);
