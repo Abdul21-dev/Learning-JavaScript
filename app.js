@@ -711,21 +711,21 @@ let {username: user1, password: secret, city: place="mumbai"} = obj1;
 console.log(user1, secret, place);
 
 // CallBack nesting => CallBack hell 
-document.addEventListener("DOMContentLoaded", function(){
-let h1 = document.querySelector("h1");
-function colorChange(color, delay, changeNextcolor){
-    setTimeout(()=>{
-      h1.style.color = color;
-      changeNextcolor();
-    }, delay);
-}
-colorChange("red", 1000, () =>{
-    colorChange("orange", 1000, () =>{
-        colorChange("green", 1000, () =>{
-            colorChange("yellow", 1000, () =>{
-                colorChange("blue", 1000)
-            });
-        });
-    });
-});
-});
+// document.addEventListener("DOMContentLoaded", function(){
+// let h1 = document.querySelector("h1");
+// function colorChange(color, delay, changeNextcolor){
+//     setTimeout(()=>{
+//       h1.style.color = color;
+//       changeNextcolor();
+//     }, delay);
+// }
+// colorChange("red", 1000, () =>{
+//     colorChange("orange", 1000, () =>{
+//         colorChange("green", 1000, () =>{
+//             colorChange("yellow", 1000, () =>{
+//                 colorChange("blue", 1000)
+//             });
+//         });
+//     });
+// });
+// });
