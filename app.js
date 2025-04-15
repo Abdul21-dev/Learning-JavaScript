@@ -699,16 +699,16 @@ let names = ["tony", "steve", "brooks", "peter"];
 let [winner, runnerup, ...others] = names;
 console.log(winner, runnerup);
 // Destructuring objects
-let obj1 = {
-    name:"karan",
-    age:15,
-    class:9,
-    subject:["hindi", "english", "maths", "science", "sst"],
-    username:"karan@123",
-    password:"abcde"
-};
-let {username: user1, password: secret, city: place="mumbai"} = obj1;
-console.log(user1, secret, place);
+// let obj1 = {
+//     name:"karan",
+//     age:15,
+//     class:9,
+//     subject:["hindi", "english", "maths", "science", "sst"],
+//     username:"karan@123",
+//     password:"abcde"
+// };
+// let {username: user1, password: secret, city: place="mumbai"} = obj1;
+// console.log(user1, secret, place);
 
 // CallBack nesting => CallBack hell 
 // document.addEventListener("DOMContentLoaded", function(){
