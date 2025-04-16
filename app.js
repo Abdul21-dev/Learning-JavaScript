@@ -729,3 +729,28 @@ console.log(winner, runnerup);
 //     });
 // });
 // });
+// Promises
+// function dbSave(data, success, failure){
+//     let internetSpeed = Math.floor(Math.random()*10) + 1 ;
+//     if(internetSpeed > 5){
+//         success();
+//     }else{
+//         failure();
+//     }
+// }
+// dbSave("Apna College", ()=>{
+//     console.log("Data saved");
+// }, ()=>{
+//     console.log("Data not saved, internet speed is slow");
+//     }
+// );
+function dbSave(data){
+    return new Promise((resolve, reject)=>{
+    let internetSpeed = Math.floor(Math.random()*10) + 1 ;
+    if(internetSpeed>4){
+        resolve("Success: Data was saved");
+    }else{
+        reject("failure: weak connection");
+    }
+    });
+}
