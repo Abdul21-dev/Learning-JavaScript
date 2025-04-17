@@ -744,7 +744,7 @@ console.log(winner, runnerup);
 //     console.log("Data not saved, internet speed is slow");
 //     }
 // );
-function dbSave(data){
+function dbSave(dataa){
     return new Promise((resolve, reject)=>{
     let internetSpeed = Math.floor(Math.random()*10) + 1 ;
     if(internetSpeed>4){
@@ -753,4 +753,11 @@ function dbSave(data){
         reject("failure: weak connection");
     }
     });
-}
+};
+dbSave("apna college")
+.then(()=>{
+    console.log("Promise was resolved");
+})
+.catch(()=>{
+    console("Promise was rejected");
+});
