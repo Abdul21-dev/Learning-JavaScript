@@ -754,10 +754,10 @@ function dbSave(dataa){
     }
     });
 };
-dbSave("apna college")
-.then(()=>{
-    console.log("Promise was resolved");
-})
-.catch(()=>{
-    console("Promise was rejected");
-});
+// dbSave("apna college")
+// .then(()=>{
+//     console.log("Promise was resolved");
+// })
+// .catch(()=>{
+//     console("Promise was rejected");
+// });
