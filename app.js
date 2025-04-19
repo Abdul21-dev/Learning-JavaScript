@@ -744,16 +744,8 @@ console.log(winner, runnerup);
 //     console.log("Data not saved, internet speed is slow");
 //     }
 // );
-function dbSave(dataa){
-    return new Promise((resolve, reject)=>{
-    let internetSpeed = Math.floor(Math.random()*10) + 1 ;
-    if(internetSpeed>4){
-        resolve("Success: Data was saved");
-    }else{
-        reject("failure: weak connection");
-    }
-    });
-};
+
+// };
 // dbSave("apna college")
 // .then(()=>{
 //     console.log("Promise was resolved");
@@ -761,3 +753,26 @@ function dbSave(dataa){
 // .catch(()=>{
 //     console("Promise was rejected");
 // });
+document.addEventListener("DOMContentLoaded", function(){
+    let h1 = document.querySelector("h1");
+    function colorChange(color, delay){
+        return new promise((resolve, reject)=>{
+        setTimeout(()=>{
+          h1.style.color = color;
+        }, delay);
+    });
+}
+    colorChange("red", 1000)
+    .then(()=>{
+        colorChange("blue", 1000);
+    })
+    .then(()=>{
+        colorChange("yellow", 1000);
+    })
+    .then(()=>{
+        colorChange("pink", 1000);
+    })
+    .then(()=>{
+        colorChange("grey", 1000);
+    })
+});
