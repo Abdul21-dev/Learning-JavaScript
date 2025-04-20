@@ -753,26 +753,34 @@ console.log(winner, runnerup);
 // .catch(()=>{
 //     console("Promise was rejected");
 // });
-document.addEventListener("DOMContentLoaded", function(){
-    let h1 = document.querySelector("h1");
-    function colorChange(color, delay){
-        return new promise((resolve, reject)=>{
-        setTimeout(()=>{
-          h1.style.color = color;
-        }, delay);
-    });
-}
-    colorChange("red", 1000)
-    .then(()=>{
-        colorChange("blue", 1000);
-    })
-    .then(()=>{
-        colorChange("yellow", 1000);
-    })
-    .then(()=>{
-        colorChange("pink", 1000);
-    })
-    .then(()=>{
-        colorChange("grey", 1000);
-    })
-});
+// document.addEventListener("DOMContentLoaded", function(){
+//     let h1 = document.querySelector("h1");
+//     function colorChange(color, delay){
+//         return new Promise((resolved, rejected)=>{
+//         setTimeout(()=>{
+//           h1.style.color = color;
+//           resolved();
+//         }, delay);
+//     });
+// }
+//     colorChange("red", 1000)
+//     .then(()=>{
+//         console.log("red was completed");
+//         return colorChange("blue", 1000);
+//     })
+//     .then(()=>{
+//         console.log("blue was completed");
+//        return colorChange("yellow", 1000);
+//     })
+//     .then(()=>{
+//         console.log("yellow was completed");
+//        return colorChange("pink", 1000);
+//     })
+//     .then(()=>{
+//         console.log("pink was completed");
+//        return colorChange("purple", 1000);
+//     })
+//     .then(()=>{
+//         console.log("purple was completed")
+//     })
+// });
