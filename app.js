@@ -786,22 +786,22 @@ console.log(winner, runnerup);
 // });
 // async and await keyword
 
-function getNum(){
-    return new Promise((resolve, reject)=>{
-        setTimeout(()=>{
-            let num = Math.floor(Math.random()*10) +1 ;
-            console.log(num);
-            resolve();
-        }, 1000);
-    })
-}
-async function demo(){
-   await getNum(); 
-   await getNum(); 
-   await getNum(); 
-         getNum();
-}
-console.log(demo());
+// function getNum(){
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             let num = Math.floor(Math.random()*10) +1 ;
+//             console.log(num);
+//             resolve();
+//         }, 1000);
+//     })
+// }
+// async function demo(){
+//    await getNum(); 
+//    await getNum(); 
+//    await getNum(); 
+//          getNum();
+// }
+// console.log(demo());
 
 // Using this async and await keyword in colorchange function
 
@@ -810,6 +810,10 @@ document.addEventListener("DOMContentLoaded", function(){
     function colorChange(color, delay){
         return new Promise((resolved, rejected)=>{
         setTimeout(()=>{
+            let num = Math.floor(Math.random()*10) + 1;
+            if(num>5){
+                rejected("Promise rejected");
+            }
           h1.style.color = color;
           console.log(`colour changed to ${color}`);
           resolved();
@@ -817,11 +821,21 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 }
 async function change(){
+    try{
     await colorChange("red", 1000);
     await colorChange("blue", 1000);
     await colorChange("green", 1000);
     await colorChange("yellow", 1000);
           colorChange("purple", 1000);
+}
+catch(err){
+    console.log("error detected");
+    console.log(err);
+}
+
+let a=5;
+console.log(a);
+console.log("new number is:", a+3);
 }
 change();
 });
