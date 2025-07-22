@@ -841,7 +841,12 @@
 // });
 
 let arr = [2, 4, 1, 5, 7]
-
+let target=3;
+//approach 1;
 for(let i=0; i<arr.length; i++){
-    if(arr[i] + )
+    for(let j=0;j<arr.length;j++){
+        if(i==j)continue;
+        if(arr[i]+arr[j]==target) return true;
+    }
 }
+return false;
